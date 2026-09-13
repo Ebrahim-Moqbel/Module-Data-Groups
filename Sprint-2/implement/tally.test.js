@@ -33,9 +33,11 @@ test("tally on an empty array returns an empty object", ()=>{
 test('tally with duplicate items returns the count for each unique item', ()=>{
     expect(tally(["a","b","a","b"])).toEqual({a:2,b:2})
 })
-// Given an invalid input like a string
+
+
+// Given an invalid input like a string, a number, or no argument at all
 // When passed to tally
-// Then it should throw an error
-test('tally with invalid input like a string, throw an error', ()=>{
-    expect(()=>tally("")).toThrow(typeError)
-})
+// Then it should throw Error("tally requires an array")
+
+test('tally with invalid input like a string, a number or no argument , throw an error',()=>{
+  expect(()=>tally("")).toThrow(new Error("tally requires an array")
