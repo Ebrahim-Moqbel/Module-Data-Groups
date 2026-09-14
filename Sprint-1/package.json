@@ -1,8 +1,8 @@
 {
-  "name": "sprint-2",
+  "name": "week-1",
   "version": "1.0.0",
-  "description": "This README will guide you through the different sections for this sprint.",
-  "main": "",
+  "description": "This README will guide you through the different sections for this week.",
+  "main": "writers.js",
   "scripts": {
     "test": "jest"
   },
